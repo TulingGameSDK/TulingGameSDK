@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
 
   s.author             = { "TulingGameSDK_Dev" => "TulingGameSDK@163.com" }
   
-  s.social_media_url   = "http://www.tulinggame.com/"
+  s.social_media_url   = "http://www.tulinggame.com"
 
   s.platform     = :ios
 
