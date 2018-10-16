@@ -27,9 +27,9 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/TulingGameSDK/TulingGameSDK", :tag => "#{s.version}" }
 
-  s.source_files = "TulingGameSDK"
+  s.source_files = "ThreeRingControl", "ThreeRingControl/**/*.{h,m,swift}"
 
-
+  s.resources = "ThreeRingControl/*.{strings,png}"
 
   s.requires_arc = true
 
