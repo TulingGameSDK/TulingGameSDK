@@ -29,7 +29,7 @@ Pod::Spec.new do |s|
 
   s.resource  = "TulingGameSDK/**/*.bundle"
 
-  s.preserve_paths = "Resources/**/*.{framework,a}"
+  s.preserve_paths = "TulingGameSDK/**/*.{framework,a}"
 
   s.vendored_frameworks = "TulingGameSDK/**/*.{framework}"
 
