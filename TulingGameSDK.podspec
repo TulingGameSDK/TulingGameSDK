@@ -27,10 +27,6 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/TulingGameSDK/TulingGameSDK", :tag => "#{s.version}" }
 
-  s.source_files = 'TulingGameSDK/TLGLoginVC.h','TulingGameSDK/TLGPaymentVC.h','TulingGameSDK/TulingGameSDKHelper.h'
-
-  s.public_header_files = "TulingGameSDK/TulingGameSDK.h"
-
   s.requires_arc = true
 
 end
