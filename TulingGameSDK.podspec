@@ -31,6 +31,8 @@ Pod::Spec.new do |s|
 
   s.requires_arc = true
 
-  s.frameworks = 'CoreTelephony', 'SystemConfiguration', 'MobileCoreServices', 'Accelerate', 'Security', 'AssetsLibrary', 'ImageIO', 'QuartzCore', 'CoreImage', 'CoreGraphics', 'CoreText', 'CoreFoundation', 'UIKit', 'libz', 'libsqlite3'
+  s.frameworks = 'CoreTelephony', 'SystemConfiguration', 'MobileCoreServices', 'Accelerate', 'Security', 'AssetsLibrary', 'ImageIO', 'QuartzCore', 'CoreImage', 'CoreGraphics', 'CoreText', 'CoreFoundation', 'UIKit'
+
+  s.libraries = 'libz', 'libsqlite3'
 
 end
