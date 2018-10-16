@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '8.0'
 
-  s.source       = { :git => 'https://github.com/TulingGameSDK/TulingGameSDK.git', :tag => '#{s.version}' }
+  s.source       = { :git => "https://github.com/TulingGameSDK/TulingGameSDK.git", :tag => "#{s.version}"}
 
   s.resource  = 'TulingGameSDK/**/*.bundle'
 
