@@ -31,7 +31,7 @@ Pod::Spec.new do |s|
 
   s.frameworks = "CoreTelephony", "SystemConfiguration", "MobileCoreServices", "Accelerate", "Security", "AssetsLibrary", "ImageIO", "QuartzCore", "CoreImage", "CoreGraphics", "CoreText", "CoreFoundation", "UIKit"
 
-  s.vendored_frameworks = "TulingGameSDK/Framework/**/*.{framework}"
+  s.vendored_frameworks = "TulingGameSDK/**/*.{framework}"
 
   s.libraries = "z", "sqlite3"
 
