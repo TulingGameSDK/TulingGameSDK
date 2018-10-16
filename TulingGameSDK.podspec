@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
   s.summary      = "图灵游戏发行商iOS-SDK,集成登录、支付系统。http://www.tulinggame.com"
 
   s.description  = <<-DESC
-                   TulingGameSDK, TulingGame, Tuling,TLG
+                   TulingGameSDK,图灵游戏发行商iOS-SDK,集成登录、支付系统。http://www.tulinggame.com
                   DESC
 
   s.homepage     = "https://github.com/TulingGameSDK/TulingGameSDK"
