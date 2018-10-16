@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
 
   s.name         = "TulingGameSDK"
 
-  s.version      = "1.0.4"
+  s.version      = "1.0.5"
 
   s.summary      = "图灵游戏发行商iOS-SDK,集成登录、支付系统。http://www.tulinggame.com"
 
@@ -32,8 +32,6 @@ Pod::Spec.new do |s|
   s.frameworks = "CoreTelephony", "SystemConfiguration", "MobileCoreServices", "Accelerate", "Security", "AssetsLibrary", "ImageIO", "QuartzCore", "CoreImage", "CoreGraphics", "CoreText", "CoreFoundation", "UIKit"
 
   s.preserve_paths = "TulingGameSDK/**/*.framework"
-
-  s.vendored_frameworks = "TulingGameSDK/**/*.{framework}"
 
   s.libraries = "z", "sqlite3"
 
