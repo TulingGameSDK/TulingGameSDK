@@ -33,6 +33,6 @@ Pod::Spec.new do |s|
 
   s.frameworks = 'CoreTelephony', 'SystemConfiguration', 'MobileCoreServices', 'Accelerate', 'Security', 'AssetsLibrary', 'ImageIO', 'QuartzCore', 'CoreImage', 'CoreGraphics', 'CoreText', 'CoreFoundation', 'UIKit'
 
-  s.libraries = 'libz', 'libsqlite3'
+  s.libraries = "z", "sqlite3"
 
 end
