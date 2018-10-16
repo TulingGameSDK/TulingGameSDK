@@ -25,9 +25,9 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = "8.0"
 
-  s.source       = { :git => "https://github.com/TulingGameSDK/TulingGameSDK", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/TulingGameSDK/TulingGameSDK.git", :tag => "#{s.version}" }
 
-  s.source_files = "TulingGameSDK", "TulingGameSDK/**/*.{h,m,swift, framework, bundle}"
+  s.source_files = "TulingGameSDK", "TulingGameSDK/**/*.{h,m,swift,framework,bundle}"
 
   s.requires_arc = true
 
