@@ -1,20 +1,42 @@
 Pod::Spec.new do |s|
-  s.name         = 'TulingGameSDK'
-  s.summary      = '图灵游戏发行商iOS-SDK,集成登录、支付系统。http://www.tulinggame.com'
-  s.version      = '1.0.0.6'
-  s.license      = { :type => 'MIT', :file => 'LICENSE' }
-  s.authors      = { 'TulingGameSDK_Dev' => 'TulingGameSDK@163.com' }
-  s.social_media_url = 'http://www.tulinggame.com'
-  s.homepage     = 'https://github.com/TulingGameSDK/TulingGameSDK'
-  s.platform     = :ios, '8.0'
-  s.ios.deployment_target = '8.0'
-  s.source       = { :git => 'https://github.com/TulingGameSDK/TulingGameSDK.git', :tag => s.version.to_s }
-  s.requires_arc = true
-  s.source_files = 'TulingGameSDK/**/*.{h,m}'
-  s.public_header_files = 'TulingGameSDK/**/*.{h}'
+
+  s.name         = "TulingGameSDK"
+
+  s.version      = "1.0.0.7"
+
+  s.summary      = "图灵游戏发行商iOS-SDK,集成登录、支付系统。http://www.tulinggame.com"
+
+  s.description  = <<-DESC
+                   TulingGameSDK,图灵游戏发行商iOS-SDK,集成登录、支付系统。http://www.tulinggame.com
+                  DESC
+
+  s.homepage     = "https://github.com/TulingGameSDK/TulingGameSDK"
+
+  s.license = { :type => 'MIT', :text => <<-LICENSE
+         Copyright PPAbner 2017-2018
+          LICENSE
+      }
+
+  s.author             = { "TulingGameSDK_Dev" => "TulingGameSDK@163.com" }
+  
+  s.social_media_url   = "http://www.tulinggame.com"
+
+  s.platform     = :ios
+
+  s.ios.deployment_target = "8.0"
+
+  s.source       = { :git => "https://github.com/TulingGameSDK/TulingGameSDK.git", :tag => "#{s.version}" }
+
+  s.resource  = "TulingGameSDK/**/*.bundle"
+
+  #s.preserve_paths = "TulingGameSDK/**/*.{framework,a}"
+
+  s.vendored_frameworks = "TulingGameSDK/**/*.{framework}"
+
+  s.frameworks = 'Foundation' , 'CoreTelephony', 'SystemConfiguration', 'MobileCoreServices', 'Accelerate', 'Security', 'AssetsLibrary', 'ImageIO', 'QuartzCore', 'CoreImage', 'CoreGraphics', 'CoreText', 'CoreFoundation', 'UIKit'
+
   s.libraries = 'z', 'sqlite3'
-  s.frameworks = 'UIKit', 'CoreFoundation', 'CoreText', 'CoreGraphics', 'CoreImage', 'QuartzCore', 'ImageIO', 'AssetsLibrary', 'Accelerate', 'MobileCoreServices', 'SystemConfiguration', 'CoreTelephony', 'Security'
-  s.resource  = 'TulingGameSDK/TulingGameSDKBundle.bundle'
-  s.vendored_frameworks = 'TulingGameSDK/TulingGameSDK.framework'
+
+  s.requires_arc = true
 
 end
