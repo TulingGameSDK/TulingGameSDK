@@ -10,8 +10,8 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
   s.source       = { :git => 'https://github.com/TulingGameSDK/TulingGameSDK.git', :tag => s.version.to_s }
   s.requires_arc = true
-  s.source_files = 'TulingGameSDK/**/*.{h,m}'
-  s.public_header_files = 'TulingGameSDK/**/*.{h}'
+  s.source_files = 'TulingGameSDK/TestSDK.h'
+  s.public_header_files = 'TulingGameSDK/TestSDK.h'
   s.libraries = 'z', 'sqlite3'
   s.frameworks = 'UIKit', 'CoreFoundation', 'CoreText', 'CoreGraphics', 'CoreImage', 'QuartzCore', 'ImageIO', 'AssetsLibrary', 'Accelerate', 'MobileCoreServices', 'SystemConfiguration', 'CoreTelephony', 'Security'
   s.resource  = 'TulingGameSDK/TulingGameSDKBundle.bundle'
