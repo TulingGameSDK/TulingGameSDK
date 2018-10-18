@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
 
   s.name         = "TulingGameSDK"
 
-  s.version      = "1.0.0.7"
+  s.version      = "1.0.0.8"
 
   s.summary      = "图灵游戏发行商iOS-SDK,集成登录、支付系统。http://www.tulinggame.com"
 
@@ -36,6 +36,8 @@ Pod::Spec.new do |s|
   s.frameworks = 'Foundation' , 'CoreTelephony', 'SystemConfiguration', 'MobileCoreServices', 'Accelerate', 'Security', 'AssetsLibrary', 'ImageIO', 'QuartzCore', 'CoreImage', 'CoreGraphics', 'CoreText', 'CoreFoundation', 'UIKit'
 
   s.libraries = 'z', 'sqlite3'
+
+  s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-lObjC' }
 
   s.requires_arc = true
 
